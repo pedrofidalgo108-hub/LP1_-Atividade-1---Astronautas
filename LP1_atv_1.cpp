@@ -479,9 +479,11 @@ int main(){
                     cout << "    ";
                     cout << "     [ ";
                     for (int j = 0; j < voos.size(); j++){
-                        for (int k = 0; k < voos[j].tripulacao.size(); k++){
-                            if (voos[j].tripulacao[k].CPF == astronautas[i].CPF){
-                                cout << voos[j].codigo << " ";
+                        if (voos[j].estado != "planejado"){
+                            for (int k = 0; k < voos[j].tripulacao.size(); k++){
+                                if (voos[j].tripulacao[k].CPF == astronautas[i].CPF){
+                                    cout << voos[j].codigo << " ";
+                                }
                             }
                         }
                     }
