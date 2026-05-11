@@ -457,8 +457,8 @@ int main(){
                 cout << " -> ";
                 cout << voos[i].codigo << " " << voos[i].estado << endl;
                 if (voos[i].tripulacao.size() > 0){
-                    for(int j = 0; j < voos[i].tripulacao.size(); j++){
                         cout << "    Tripulação: " << endl;
+                    for(int j = 0; j < voos[i].tripulacao.size(); j++){
                         cout << "    ";
                         cout << " -> ";
                         cout << voos[i].tripulacao[j].CPF << " " << voos[i].tripulacao[j].idade << " " << voos[i].tripulacao[j].nome << endl;
